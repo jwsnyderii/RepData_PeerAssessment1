@@ -134,7 +134,8 @@ $(document).ready(function () {
 library(dplyr, warn.conflicts = FALSE)
 library(lubridate, warn.conflicts = FALSE)</code></pre>
 <p>Load the data, take a quick look at it’s structure, and convert the date strings to POSIX dates.</p>
-<pre class="r"><code>activity &lt;- read.csv(&quot;activity.csv&quot;)
+<pre class="r"><code>unzip(&quot;activity.zip&quot;)
+activity &lt;- read.csv(&quot;activity.csv&quot;)
 str(activity)</code></pre>
 <pre><code>## 'data.frame':    17568 obs. of  3 variables:
 ##  $ steps   : int  NA NA NA NA NA NA NA NA NA NA ...
